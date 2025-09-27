@@ -1,5 +1,5 @@
 description: |
-  Sensor driver for the pixart PMW3610 mouse sensor 
+  Sensor driver for the pixart PMW3610 mouse sensor
 
 compatible: "pixart,pmw3610"
 
@@ -9,24 +9,26 @@ properties:
   irq-gpios:
     type: phandle-array
     required: true
+
   scroll-layers:
     type: array
     default: []
+    description: List of layers for scroll mode
+
   snipe-layers:
     type: array
     default: []
+    description: List of layers for snipe mode
+
   automouse-layer:
     type: int
     default: -1
+    description: Layer number for automouse mode
+
   invert-x:
     type: boolean
     description: Invert X-axis movement
+
   invert-y:
     type: boolean
     description: Invert Y-axis movement
-  scroll-layers:
-    type: int
-    description: Layer number for scroll mode
-  automouse-layer:
-    type: int
-    description: Layer number for automouse mode
