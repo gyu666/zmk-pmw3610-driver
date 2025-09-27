@@ -18,3 +18,15 @@ properties:
   automouse-layer:
     type: int
     default: -1
+  invert-x:
+    type: boolean
+    description: Invert X-axis movement
+  invert-y:
+    type: boolean
+    description: Invert Y-axis movement
+  scroll-layers:
+    type: int
+    description: Layer number for scroll mode
+  automouse-layer:
+    type: int
+    description: Layer number for automouse mode
